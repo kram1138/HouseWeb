@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="TestWeb.Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="Styles/Site.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Panel ID="Panel1" runat="server" CssClass="navbar">
+            <div class="dropdown">
+              <asp:button runat="server" CssClass="navbutton" Text="Dropdown1"/>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <asp:button runat="server" CssClass="navbutton" Text="Menu Item 1"/>
+            <div class="dropdown">
+              <asp:button runat="server" CssClass="navbutton" Text="Dropdown1"/>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <asp:button runat="server" CssClass="navbutton" Text="Menu Item 2"/>
+        </asp:Panel>
+        <br />
+        <div>
+            <table style="width:100%">
+                <colgroup>
+                    <col style="width: 20%" />
+                    <col style="width: 60%" />
+                    <col style="width: 20%" />
+                </colgroup>
+                <tr>
+                    <td></td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td></td>
+                </tr>
+            
+            </table>
+        
+        </div>
+    </form>
+</body>
+</html>
